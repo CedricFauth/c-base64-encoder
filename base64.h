@@ -11,7 +11,7 @@ static char *base64_encode(void *data, unsigned int length){
 
 	char *s = (char*) data;
 	unsigned int new_length = (length + 2) / 3 * 4;
-	printf("%u ", new_length);
+	//printf("%u ", new_length);
 	unsigned int padding = length % 3;
 	char *target = malloc(sizeof(char)*new_length);
 	if (!target) return NULL;
